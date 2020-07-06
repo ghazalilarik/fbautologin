@@ -6,10 +6,12 @@ driver = webdriver.Chrome(PATH)
 
 driver.get("https://www.facebook.com")
 
-search = driver.find_element_by_id("email")
-search.send_keys("youremail")
+element = driver.find_element_by_id("email")
+element.send_keys("youremail")
 
-search = driver.find_element_by_id("pass")
-search.send_keys("yourpassword")
+element = driver.find_element_by_id("pass")
+element.send_keys("yourpassword")
 
-search.send_keys(Keys.RETURN)
+element.send_keys(Keys.RETURN)
+
+#Be Sure to Subscribe My Youtube Channel #GhazaliLarik
